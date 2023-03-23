@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Callback</title>
+  </head>
+  <body>
+
+    <div class="container-fluid bg-light ">
+        <div class="row mx-5">
+            <div class="col-6">Contact: +1 345 5785 5789</div>
+            <div class="col-6">Email: info@youremail.com</div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ShoesByEliteDev</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Casual</a></li>
+                  <li><a class="dropdown-item" href="#">Classic</a></li>
+                  <li><a class="dropdown-item" href="#">Leather Shoes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Services</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="height: 40vh;">
+          <div class="carousel-item h-100 active" data-bs-interval="10000">
+            <img src="/IMG/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item h-100" data-bs-interval="2000">
+            <img src="/IMg/alexander-kovacs-_cpe2a7bCRY-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="/IMG/keagan-henman-xPJYL0l5Ii8-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- header done -->
+
+    <!-- banner/carousel -->
+    <!-- banner/carousel done -->
+
+    <!-- content -->
+    <div class="container mt-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-10 col-sm-10 col-md-4">
+          <img src="/IMG/sixteen-miles-out-OGND72jS-HE-unsplash.jpg" class="w-75" alt="">
+              <ul class="list-unstyled ">
+                  <li class="mb-3"><a href="" class="btn w-75 btn-outline-primary">Home</a></li>
+                  <li class="mb-3"><a href="" class="btn w-75 btn-outline-primary">Profile</a></li>
+                  <li class="mb-3"><a href="" class="btn w-75 btn-outline-primary">Profile Update</a></li>
+                  <li class="mb-3"><a href="" class="btn w-75 btn-outline-primary">Shopcart</a></li>
+                  <li class="mb-3"><a href="" class="btn w-75 btn-outline-primary">Password Change</a></li>
+              </ul>
+        </div>
+
+        <div class="col-10 col-sm-10 col-md-8">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="table-box table-responsive">
+                <h2 class="mb-3 mt-5">Order Summary</h2>
+                <div class="table">
+                  <table class="table">
+                    <thead>
+                      <th>S/N</th>
+                      <th>Quantity</th>
+                      <th>Product</th>
+                      <th>Amount</th>
+                      <th>Price</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>4</td>
+                        <td><img src="/IMG/mostafa-mahmoudi-3OZr-hLbsq0-unsplash.jpg" width="30px" height="30px" alt=""></td>
+                        <td>$400.00</td>
+                        <td>$1600.00</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>6</td>
+                        <td><img src="/IMG/claudio-schwarz-PH8GUKG-Do0-unsplash.jpg" width="30px" height="30px" alt=""></td>
+                        <td>$150.00</td>
+                        <td>$900.00</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>5</td>
+                        <td><img src="/IMG/tobias-tullius-Fg15LdqpWrs-unsplash.jpg" width="30px" height="30px" alt=""></td>
+                        <td>$500.00</td>
+                        <td>$2500.00</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>2</td>
+                        <td><img src="/IMG/keagan-henman-xPJYL0l5Ii8-unsplash.jpg" width="30px" height="30px" alt=""></td>
+                        <td>$100.00</td>
+                        <td>$200.00</td>
+                      </tr>
+                    </tbody>
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>Total:</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-12">
+              <h2 class="m-3">Delivery Info</h2>
+              <div class="cform">
+                <div class="ccform">
+                  <form action="">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Full Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email Address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Phone Number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Delivery Address</label>
+                    </div>
+                    <input type="hidden" value="">
+                    <button type="submit" class="btn w-25 btn-success">Pay</button>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center"></div>
+
+          
+        </div>
+      </div>
+    </div>
+    <!-- content done -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-10 col-md-3">
+                  <h2 class="team"><em>ShoeByEliteDev..</em></h2>
+                  <p>...A shopping experience</p>
+              </div>
+              <div class="col-10 col-md-4">
+                  <h2>Contact us</h2>
+                  <h4><i class="fa-solid fa-phone"></i><span>+1 456 6578 8785</span></h4>
+                  <h4><i class="fa-solid fa-envelope"></i><span>info@youremail.com</span></h4>
+              </div>
+              <div class="col-10 col-md-2">
+                  <ul class="list-unstyled">
+                      <li class="mb-3"><a href="">Home</a></li>
+                      <li class="mb-3"><a href="">Gallery</a></li>
+                      <li class="mb-3"><a href="">About</a></li>
+                      <li class="mb-3"><a href="">FAQ</a></li>
+                      <li class="mb-3"><a href="">Blog</a></li>
+                  </ul>
+              </div>
+              <div class="col-10 col-md-3">
+                  <h4 class="mb-3">Social Handles</h4>
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                      <li class="list-inline-item"><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                      <li class="list-inline-item"><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                      <li class="list-inline-item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href=""><i class="fa-brands fa-linkedin"></i> </a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer2">
+          <p class="text-center pt-3 pb-2 border-top">ShopByEliteDev | copyright &copy; 2023 | Made with love: Team Elite Dev.</p>
+      </div>
+  </div>
+  
+    <!-- footer done -->
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
